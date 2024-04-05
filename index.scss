@@ -1,0 +1,159 @@
+$red-bg : red;
+$font-weight: 400;
+$header-font-weight: 700;
+$button-weight: 600;
+$font-size: 20px;
+$box-padding: 0px 70px 20px 60px;
+$header-one: 50px;
+$pill: 30px;
+
+:root {
+    /* colors */
+    --primary-color: #F3F4EC;
+    --secondary-color: #6C6E71;
+    --forest-green: #292D33;
+    --charcoal: #202020;
+    --sunset: #D4491B;
+  
+    /* typography */
+    --main-font: "indivisible", sans-serif;
+    --support-font: "turnip", serif;
+  }
+  
+  /* add your custom styles here 👇 */
+
+* {
+    font-family: var(--main-font);
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+article {
+    display: flex;
+    flex-direction: column;
+}
+h3 {
+    font-weight: $font-weight;
+    font-size: $font-size;
+    line-height: 30px;
+    color: var(--secondary-color);
+    margin: 20px 0;
+}
+p {
+    color: var(--sunset);
+    font-size: $font-size;
+    font-weight: $button-weight;
+    line-height: 26px;
+    margin: 10px auto;
+}
+.row-one {
+    display: flex;
+    flex-direction: row;
+}
+.row-child {
+    background-color: var(--primary-color);
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+}
+.header {
+    font-size: $header-one;
+    font-weight: $header-font-weight;
+    color: var(--forest-green);
+    line-height: 60px;
+}
+.sub-header {
+    font-family: var(--support-font);
+    font-weight: $font-weight;
+    color: var(--secondary-color);
+}
+img {
+    height: 100%;
+    max-width: 100%;
+}
+.each-box {
+    padding: $box-padding;
+}
+button {
+    cursor: pointer;
+    background-color: var(--forest-green);
+    color: var(--primary-color);
+    font-weight: $button-weight;
+    font-size: 18px;
+    border-radius: $pill;
+    border: none;
+    padding: 10px 90px;
+    margin: 40px auto;
+    width: fit-content;
+}
+button a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+/* Style for the custom bullet pagination */
+.slick-dots {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+  }
+  
+  .slick-dots button {
+    width: 10px;
+    height: 10px;
+    background-color: #000;
+    border-radius: 50%;
+    margin: 0 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .slick-dots button:hover {
+    background-color: #ccc;
+  }
+  
+  
+  
+/* Mobile CSS */
+
+@media (max-width: 1024px) {
+    .row-one {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+    #second-row {
+        flex-direction: column-reverse;
+    }
+    .row-child {
+        border-bottom-right-radius: 8px;
+        border-bottom-left-radius: 8px;
+    }
+    img {
+        border-top-right-radius: 8px;
+        border-top-left-radius: 8px;
+    }
+    .each-box {
+        padding: 20px 45px;
+        text-align: center;
+    }
+    .header {
+        font-size: 32px;
+        line-height: 38.4px;
+    };
+    .sub-header {
+        font-size: 17px;
+    }
+    button {
+        margin: 10px;
+    }
+}
+
+/* @media (min-width: 768px) {
+    #slick {
+        display: none;
+    }
+} */
