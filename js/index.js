@@ -7,7 +7,7 @@ $(document).ready(function(){
         slidesToShow: 1,
         slidesToScroll: 1,
         autoplay: true,
-        autoplaySpeed: 4000,
+        autoplaySpeed: 3000,
         arrows: false,
         cssEase: 'linear',
         appendDots: $(".slick-container"),
