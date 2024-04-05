@@ -11,6 +11,7 @@ $pill: 30px;
     /* colors */
     --primary-color: #F3F4EC;
     --secondary-color: #6C6E71;
+    --dot-color: #DAD9D8;
     --forest-green: #292D33;
     --charcoal: #202020;
     --sunset: #D4491B;
@@ -103,20 +104,21 @@ button a {
   }
 
   .slick-dots li {
-    margin: 0 5px;
-  }
-  .slick-dots li button {
-    width: 10px;
-    height: 10px;
-    background-color: #1e0dd4;
-    border-radius: 50%;
-    border: none;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
-  
+        margin: 0 2px;
+        width: 15px;
+        height: 15px;
+        list-style: none;
+        float: left;
+        background-color: var(--dot-color);
+        border-radius: 20px;
+        cursor: pointer;
+        transition: 0.3s ease width;
+    }
+
   li.slick-active {
-    background-color: #c60a0a;
+    background-color: var(--sunset) ;
+    width: 60px;
+    cursor: auto;
   }
 
 /* Mobile CSS */
