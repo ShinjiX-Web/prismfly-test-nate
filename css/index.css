@@ -94,26 +94,31 @@ button a {
   text-decoration: none;
 }
 
-/* Style for the custom bullet pagination */
+/* Style for the custom bulleted pagination */
 .slick-dots {
   display: flex;
   justify-content: center;
+  gap: 10px;
   padding: 0;
-  margin: 20px 0;
+  margin-top: 20px;
 }
 
-.slick-dots button {
+.slick-dots li {
+  margin: 0 5px;
+}
+
+.slick-dots li button {
   width: 10px;
   height: 10px;
-  background-color: #000;
+  background-color: #1e0dd4;
   border-radius: 50%;
-  margin: 0 5px;
+  border: none;
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
 
-.slick-dots button:hover {
-  background-color: #ccc;
+li.slick-active {
+  background-color: #c60a0a;
 }
 
 /* Mobile CSS */
@@ -144,6 +149,7 @@ button a {
   }
   .sub-header {
     font-size: 17px;
+    line-height: 25.5px;
   }
   button {
     margin: 10px;

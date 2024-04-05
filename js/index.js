@@ -7,13 +7,14 @@ $(document).ready(function(){
         slidesToShow: 1,
         slidesToScroll: 1,
         autoplay: true,
-        autoplaySpeed: 3000,
+        autoplaySpeed: 4000,
         arrows: false,
         cssEase: 'linear',
-        appendDots: $(".slick-container"),
+        appendDots: $(".slick-pagination"),
         customPaging: function(slider, i) {
           return '<span></span>';
-        }
+        },
+        equalheights: true // Ensure all slides have equal height
       });
     } else {
       $("#slick").slick("unslick"); // Uninitialize Slick carousel on desktop
